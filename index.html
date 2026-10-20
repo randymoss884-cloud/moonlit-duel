@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Moonlit Duel</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #05060d;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    -webkit-user-select: none; user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  canvas {
+    display: block;
+    touch-action: none;              /* critical: no scroll/zoom gestures */
+    background: #0b1026;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
